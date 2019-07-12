@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <style>
+        body{
+            background: url("https://cdn.pixabay.com/photo/2017/03/02/08/58/background-texture-2110724__340.jpg");
+            background-size: 2000px 300px;
+        }
+        h1{
+            color: tomato;
+            font-family: 'Impact';
+            font-size: 75px;
+            line-height: 200%;
+        }
+        label{
+            font-size: 20px;
+            color: rgb(47, 255, 82);
+            font-family: 'times new roman';
+        }
+    </style>
+</head>
+<body>
+    <script src="app.js"></script>
+    <div class="container">
+        <br><br><br><br><h1>Tip Calculator</h1>
+        <div class="form-group">
+            <label for="id">How much was your bill($)?</label>
+            <input type="text" class="form-control" id="id" placeholder="only a number">
+        </div>
+        <div class="form-group">
+            <label for="sid">How was your service?</label>
+            <select class="form-control" id="sid">
+                <option disabled selected value="0">-- Choose an Option --</option>
+                <option value="0.2">20% - Great</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.1">10% - Very slow</option>
+                <option value="0.05">5% - Bad</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="pid">How many people are sharing the bill?</label>
+            <input type="text" class="form-control" id="pid" placeholder="only a number">
+        </div>
+        <div style="font-size: 50px; color: firebrick; font-family: 'impact'" id="totalTip" align="center">
+            <button type="submit" class="btn btn-lg btn-success" onclick="tipcalculator()">Caculate!</button>
+        </div>
+    </div>
+</body>
+</html>
